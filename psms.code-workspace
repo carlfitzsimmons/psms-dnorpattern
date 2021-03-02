@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+			//"path": "../../../../carlfitzsimmons/Code/js/psms"
+
+		}
+	],
+	"settings": {
+		"npm.enableRunFromFolder": true
+	}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "psms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "git-cli": "^0.11.0",
+    "lodash": "^4.17.15",
+    "modesl": "^1.2.1",
+    "moment": "^2.24.0",
+    "mysql": "^2.17.1",
+    "node-cisco-axl": "^0.0.1",
+    "strong-soap": "^3.0.0",
+    "xmlbuilder": "^13.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.0"
+  }
+}
