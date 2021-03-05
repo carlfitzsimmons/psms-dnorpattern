@@ -4,6 +4,7 @@ const app = express() // Create the Express webserver
 const axlClient = require('./libs/axl/axlClient') // Bring in the UCM AXL client module
 const phoneServiceXml = require('./libs/phoneServiceXml1') // Bring in the phone service XML module(s)
 //const phoneServiceXml = require('./libs/phoneServiceiSecureXML') // Bring in the phone service XML module(s)
+//const mySQL_DNorPattern = require('./libs/mySQL_DNorPattern') // Test Mysql query return
 const userDbStore = require('./libs/userDbStore') // Bring in the UserDb store to find users by numeric ID
 const mysql = require('mysql')
 
@@ -86,11 +87,14 @@ app.get('/api/psms/auth', (req, res) => {
 app.get('/api/psms/location', (req, res) => {
   let { location, device } = req.query
   console.log(`Express web route`)
+   
   axlClient
-    .getDevicePrimaryLine(device)
-    .then((directoryNumber) => {
+    .fetchDN(device) 
+    //.getDevicePrimaryLine(device)
+    .then((dnorpattern) => {
       // Send SQL to Queue Manager 
-      insertIntoDb(directoryNumber, device)
+      //insertIntoDb(directoryNumber, device)
+      //mysql(device)
 
       // Place a call
       //placeCallToEndpoint(directoryNumber)

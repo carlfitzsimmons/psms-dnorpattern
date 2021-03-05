@@ -134,4 +134,4 @@ module.exports.initialMenu = initialMenu
 module.exports.selectAreaMessage = selectAreaMessage
 module.exports.loginFailedMessage = loginFailedMessage
 module.exports.deviceLookupFailedMessage = deviceLookupFailedMessage
-console.log(`in phoneServiceXML-8`)
+console.log(`Leaving phoneServiceXML-8`)

@@ -168,3 +168,4 @@ module.exports.initialMenu = initialMenu
 module.exports.selectAreaMessage = selectAreaMessage
 module.exports.loginFailedMessage = loginFailedMessage
 module.exports.deviceLookupFailedMessage = deviceLookupFailedMessage
+console.log(`Leaving phoneServiceXML1`)
