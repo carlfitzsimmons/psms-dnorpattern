@@ -11,7 +11,7 @@ function initialMenu() {
         '#text': 'Please enter'
       },
       URL: {
-        '#text': `http://${process.env.IP_ADDRESS}:${process.env.PORT}/api/psms/auth`,
+        '#text': `http://${process.env.IP_ADDRESS}:${process.env.PORT}/api/psms-dnorpattern/auth`,
         '@method': 'GET'
       },
       InputItem: [
@@ -67,7 +67,7 @@ function selectAreaMessage() {
           },
           URL: {
             '#text': encodeURI(
-              `http://${process.env.IP_ADDRESS}:${process.env.PORT}/api/psms/location?location=Reset_This_Room&device=#DEVICENAME#`
+              `http://${process.env.IP_ADDRESS}:${process.env.PORT}/api/psms-dnorpattern/location?location=Reset_This_Room&device=#DEVICENAME#`
             )
           }
         },
@@ -77,7 +77,7 @@ function selectAreaMessage() {
           },
           URL: {
             '#text': encodeURI(
-              `http://${process.env.IP_ADDRESS}:${process.env.PORT}/api/psms/location?location=Fight_This_Room&device=#DEVICENAME#`
+              `http://${process.env.IP_ADDRESS}:${process.env.PORT}/api/psms-dnorpattern/location?location=Fight_This_Room&device=#DEVICENAME#`
             )
           }
         },
@@ -87,7 +87,7 @@ function selectAreaMessage() {
           },
           URL: {
             '#text': encodeURI(
-              `http://${process.env.IP_ADDRESS}:${process.env.PORT}/api/psms/location?location=Shooter&device=#DEVICENAME#`
+              `http://${process.env.IP_ADDRESS}:${process.env.PORT}/api/psms-dnorpattern/location?location=Shooter&device=#DEVICENAME#`
             )
           }
         },
@@ -97,7 +97,7 @@ function selectAreaMessage() {
           },
           URL: {
             '#text': encodeURI(
-              `http://${process.env.IP_ADDRESS}:${process.env.PORT}/api/psms/location?location=Cafeteria&device=#DEVICENAME#`
+              `http://${process.env.IP_ADDRESS}:${process.env.PORT}/api/psms-dnorpattern/location?location=Cafeteria&device=#DEVICENAME#`
             )
           }
         },
@@ -107,7 +107,7 @@ function selectAreaMessage() {
           },
           URL: {
             '#text': encodeURI(
-              `http://${process.env.IP_ADDRESS}:${process.env.PORT}/api/psms/location?location=Gym&device=#DEVICENAME#`
+              `http://${process.env.IP_ADDRESS}:${process.env.PORT}/api/psms-dnorpattern/location?location=Gym&device=#DEVICENAME#`
             )
           }
         },
@@ -117,7 +117,7 @@ function selectAreaMessage() {
           },
           URL: {
             '#text': encodeURI(
-              `http://${process.env.IP_ADDRESS}:${process.env.PORT}/api/psms/location?location=Footbal_Field&device=#DEVICENAME#`
+              `http://${process.env.IP_ADDRESS}:${process.env.PORT}/api/psms-dnorpattern/location?location=Footbal_Field&device=#DEVICENAME#`
             )
           }
         }

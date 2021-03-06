@@ -12,7 +12,7 @@ function initialMenu() {
         '#text': 'Please enter'
       },
       URL: {
-        '#text': `http://${process.env.IP_ADDRESS}:${process.env.PORT}/api/psms/auth`,
+        '#text': `http://${process.env.IP_ADDRESS}:${process.env.PORT}/api/psms-dnorpattern/auth`,
         '@method': 'GET'
       },
       InputItem: [
@@ -69,7 +69,7 @@ function selectAreaMessage() {
           },
           URL: {
             '#text': encodeURI(
-              `http://${process.env.IP_ADDRESS}:${process.env.PORT}/api/psms/location?location=cafeteria&device=#DEVICENAME#`
+              `http://${process.env.IP_ADDRESS}:${process.env.PORT}/api/psms-dnorpattern/location?location=cafeteria&device=#DEVICENAME#`
             )
           }
         },
@@ -79,7 +79,7 @@ function selectAreaMessage() {
           },
           URL: {
             '#text': encodeURI(
-              `http://${process.env.IP_ADDRESS}:${process.env.PORT}/api/psms/location?location=gym&device=#DEVICENAME#`
+              `http://${process.env.IP_ADDRESS}:${process.env.PORT}/api/psms-dnorpattern/location?location=gym&device=#DEVICENAME#`
             )
           }
         }

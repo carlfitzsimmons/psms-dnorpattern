@@ -13,7 +13,7 @@ function iSecureMenu() {
         '#text': 'Please select'
       },
       URL: {
-        '#text': `http://${process.env.IP_ADDRESS}:${process.env.PORT}/api/psms/alert?device=#DEVICENAME#`,
+        '#text': `http://${process.env.IP_ADDRESS}:${process.env.PORT}/api/psms-dnsorpattern/alert?device=#DEVICENAME#`,
         '@method': 'GET'
       },
       InputItem: [

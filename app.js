@@ -40,17 +40,17 @@ requiredEnvVars.forEach((el) => {
   }
 })
 
-// Express web route to /api/psms (GET)
+// Express web route to /api/psms-dnorpattern (GET)
 // This gets called when the phone first loads the service
-app.get('/api/psms-snorpattern', (req, res) => {
+app.get('/api/psms-dnorpattern', (req, res) => {
   // Return the initial login menu
   res.set('Content-Type', 'text/xml')
   res.send(phoneServiceXml.initialMenu())
 })
 
-// Express web route to /api/psms/alert (GET)
+// Express web route to /api/psms-dnorpattern/alert (GET)
 // This gets called when the phone submits the form
-app.get('/api/psms/auth', (req, res) => {
+app.get('/api/psms-dnorpattern/auth', (req, res) => {
   console.log(`Check for numericId `)
 
   // Extract the numericId and pin from the request
@@ -84,8 +84,8 @@ app.get('/api/psms/auth', (req, res) => {
     })
 })
 
-// Express web route to /api/psms/location (GET)
-app.get('/api/psms/location', (req, res) => {
+// Express web route to /api/psms-dnorpattern/location (GET)
+app.get('/api/psms-dnorpattern/location', (req, res) => {
   let { location, device } = req.query
   console.log(`Express web route`)
    
