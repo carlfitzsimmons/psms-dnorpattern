@@ -42,7 +42,7 @@ requiredEnvVars.forEach((el) => {
 
 // Express web route to /api/psms (GET)
 // This gets called when the phone first loads the service
-app.get('/api/psms', (req, res) => {
+app.get('/api/psms-snorpattern', (req, res) => {
   // Return the initial login menu
   res.set('Content-Type', 'text/xml')
   res.send(phoneServiceXml.initialMenu())
