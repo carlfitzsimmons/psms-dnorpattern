@@ -19,6 +19,7 @@ db.connect()
 
 const esl = require('modesl')
 const moment = require('moment')
+const { result } = require('lodash')
 
 // Set the required Express server setttings
 const requiredEnvVars = [
@@ -92,6 +93,8 @@ app.get('/api/psms/location', (req, res) => {
     .fetchDN(device) 
     //.getDevicePrimaryLine(device)
     .then((dnorpattern) => {
+      console.log(`device = `, dnorpattern)
+      console.log(`.fetchDN(device) device.dnorpattern = `, dnorpattern)
       // Send SQL to Queue Manager 
       //insertIntoDb(directoryNumber, device)
       //mysql(device)

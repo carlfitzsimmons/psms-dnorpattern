@@ -161,8 +161,10 @@ function fetchDN(device) {
           }
           var x = result.return.row.resolve
           console.log('x = ', x)
+          console.log(`result = `, result)
           console.log(`result.return = `, result.return)
-          console.log(`returned devices = ${JSON.stringify(result.return.row)} `)
+          console.log(`result.return.row = `, result.return.row)
+          console.log(`returned JSON = ${JSON.stringify(result.return.row)} `)
           console.log(`result[return][row][dnorpattern] = `, result[`return`][`row`][`dnorpattern`])
           console.log(`result.return.row.dnorpattern = `, result.return.row.dnorpattern)
     })
